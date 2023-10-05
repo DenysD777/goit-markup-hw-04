@@ -18,6 +18,7 @@
   --third-bg-color: #f5f5f5;
   --fourth-bg-color: #f5f4fa;
   --border-color: #ECECEC;
+  --icon-color:#afb1b8;
 }
 
 /* Body */
@@ -203,9 +204,7 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   }
-.overlay{
- 
-}
+
 .title {
   color: var(--third-bg-color);
   margin: 0;
@@ -267,6 +266,15 @@ gap:30px;
   width: 270px;
   
 }
+.solution-item{
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: var(--fourth-bg-color);
+ justify-content: center;
+ align-items: center;
+}
+
 
 .text {
   color: var(--first-color-text);
@@ -277,6 +285,7 @@ gap:30px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin: 0;
+  margin-top: 30px;
 }
 
 .text-item {
@@ -338,12 +347,16 @@ gap:30px;
   margin-right: auto;
   padding: 0;
   gap:30px;
+  
   }
 
-.list .link{
+.people .link{
   text-align: center;
   padding: 0;
   align-items: center;
+  background-color: var(--first-bg-color);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+border-radius: 0px 0px 4px 4px;
 }
 
 .name {
@@ -369,7 +382,80 @@ gap:30px;
 }
 .info{
   padding-top: 30px;
-  padding-bottom: 30px;
+  
+}
+.list-network{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+.network-items{
+  
+  margin: 0;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  gap:12px;
+  background-color: var(--first-bg-color);
+}
+.network-items:hover,.network-items:focus{
+  background-color:var(--accent-color);
+}
+
+
+.network-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  fill:var(--icon-color);
+  
+}
+.network-link:hover,.network-link:focus{
+  fill:var(--third-color-text);
+  cursor: pointer;
+}
+ /* Постійні Клієнти */
+ .customers-list{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  gap:30px;
+  margin-top: 50px;
+ }
+ .customers-item{
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+border: 1px solid var(--icon-color);
+
+}
+.customers-item:hover,.customers-item:focus{
+  border: 1px solid var(--accent-color);
+}
+.customers-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  fill:var(--icon-color);
+}
+/* .customers-icon{
+  fill:var(--icon-color);
+} */
+.customers-link:hover,.customers-link:focus{
+  fill:var(--accent-color);
+  cursor: pointer;
 }
 /* Footer */
 
@@ -459,6 +545,52 @@ gap:30px;
   
 }
 
+.footer-network{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  gap:10px;
+}
+
+.footer-network-items{
+  width: 44px;
+  height:44px;
+  background-color: rgba(255, 255, 255, 0.10);
+  border-radius: 50%;
+  margin-top: 20px;
+}
+.footer-network-items:hover,.footer-network-items:focus{
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+.footer-network-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height:44px;
+}
+.footer-network-icon{
+  fill:var(--third-color-text);
+}
+.Footer-text{
+  color: var(--third-color-text);
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+margin: 0;
+padding: 0;
+margin-top: 12px;
+}
+.footer .container{
+  display: flex;
+  gap:70px;
+}
 /* Фільтр робіт */
 
 .work-button {
@@ -507,6 +639,10 @@ height: 38px;
   margin-top: 50px;
   gap:30px;
 }
+.examples-link:hover{
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
+}
 .examples-conteiner{
   padding: 20px 24px;
   border: 1px solid var(--border-color);
@@ -539,4 +675,8 @@ height: 38px;
 
 .work-photo {
   text-decoration: none;
+}
+.work-link:hover,.work-link:focus{
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+
 }
